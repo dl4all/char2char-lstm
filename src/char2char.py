@@ -104,7 +104,7 @@ class Char2Char(nn.Module):
 
         return dataset_loader.int2char[character], hidden_states
 
-    def init_hidden(self, sequences_per_batch):
+    def init_hidden_states(self, sequences_per_batch):
         """Create the initial hidden states filled with zeros.
 
         Args:
