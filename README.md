@@ -11,3 +11,4 @@ The source is available [here](./src). Further explanation of the source code ca
 ## To do
 
 - [ ] Add intructions on how to run the project.
+- [ ] Add model validation and testing.
