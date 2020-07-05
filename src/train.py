@@ -12,7 +12,7 @@ def train_model(
     sequence_length,
     number_epochs,
     learning_rate,
-    clip_max_normalization,
+    clip_gradients_max,
     show_loss_plot=False,
 ):
     criterion = nn.CrossEntropyLoss()
@@ -42,7 +42,7 @@ def train_model(
             - https://machinelearningmastery.com/how-to-avoid-exploding-gradients-in-neural-networks-with-gradient-clipping/
             - https://towardsdatascience.com/what-is-gradient-clipping-b8e815cdfb48
             """
-            nn.utils.clip_grad_norm_(model.parameters(), clip_max_normalization)
+            nn.utils.clip_grad_norm_(model.parameters(), clip_gradients_max)
             optimizer.step()
             train_loss_over_epochs.append(loss.item())
         print(f"Epoch {epoch}/{number_epochs}...")
