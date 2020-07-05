@@ -5,9 +5,9 @@ The model available in this repository is a character-to-character model. The mo
 
 ## Source code
 
-The source is available [here](./src).
+The source is available [here](./src). Further explanation of the source code can be found in the source code itself.
 
 
-## Source code explained
+## To do
 
-The source code explained is available [here](./notebook).
+- [ ] Add intructions on how to run the project.
